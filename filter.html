@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filteration</title>
+  </head>
+  <body>
+    <script>
+      const array = [12, 4, 9, 5, 8];
+      const filtered = filterRange(array, 8, 12);
+      function filterRange(array, a, b) {
+        const res = array.filter((arr) => arr >= a && arr <= b);
+        return res;
+      }
+      console.log(filtered);
+      console.log(array);
+    </script>
+  </body>
+</html>
