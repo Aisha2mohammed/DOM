@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const char = "-";
+      const camelize = "my-short-string";
+      const res = camelize.split("");
+      const res2 = res.indexOf(char);
+      const res4 = res.lastIndexOf(char);
+      const res3 = res
+        .map((val) => {
+          if (val === char) {
+            const range = res[res2 + 1].toUpperCase();
+            res.splice(res2, 1);
+            return range;
+          } else return val;
+        })
+
+        .join("");
+      console.log(res3);
+    </script>
+  </body>
+</html>
+<!-- programs@shecodeafrica.org. -->
