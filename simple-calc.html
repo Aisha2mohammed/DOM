@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple calculator</title>
+  </head>
+  <body>
+    <script>
+      let calc = new Calculator("88+ 5");
+
+      function Calculator() {
+        this.calculate = function (a) {
+          let res = eval(a);
+          return res;
+        };
+      }
+      console.log(calc.calculate);
+    </script>
+  </body>
+</html>
