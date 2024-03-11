@@ -9,17 +9,14 @@
     <script>
       let arr = [5, 2, 1, -10, 8];
       let array = arr.sort((a, b) => (a > b ? -1 : 1));
+
+      console.log(arr);
       console.log(array);
 
-      //THE SECOND PART
-      let arrayResult = [];
+      //THE SECOND PART sorting method
       let arrayString = ["HTML", "JavaScript", "CSS"];
-
-      for (let i = 0; i < arrayString.length; i++) {
-        arrayResult =
-          charAt[i] > charAt[i + 1] ? arrayString[i] : arrayString[i + 1];
-      }
-      console.log(arrayResult);
+      let copy = arrayString.slice().sort();
+      console.log(copy);
       console.log(arrayString);
     </script>
   </body>
