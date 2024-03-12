@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transfering the names</title>
+  </head>
+  <body>
+    <script>
+      let john = { name: "aisha", age: "23" };
+      let pete = { name: "asil", age: " 14" };
+      let mary = { name: "muna", age: "27" };
+      console.log(john.name);
+      let result;
+      let user = [john, pete, mary];
+
+      let names = user.map(function (item) {
+        return item.name;
+      });
+      console.log(names);
+    </script>
+  </body>
+</html>
